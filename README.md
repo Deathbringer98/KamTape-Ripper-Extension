@@ -1,5 +1,5 @@
 # KamTape Ripper
-
+# Tip Jar $ https://buymeacoffee.com/ghostbyte
 Chrome / Brave extension that downloads videos from [kamtape.com](https://www.kamtape.com/) as **MP4**, the **original FLV**, or rips the audio to **MP3**.
 
 ## Features
