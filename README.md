@@ -4,8 +4,8 @@ Chrome / Brave extension that downloads videos from [kamtape.com](https://www.ka
 
 ## Features
 
-- **Rip bar under the player** — on any KamTape watch page, a "KamTape Ripper" bar appears below the video with one-click MP4 / FLV download buttons (file sizes shown) and a Rip MP3 button.
-- **MP3 ripping** — decodes the video's audio track in the browser and encodes it to a 192 kbps MP3 (via the bundled [lamejs](https://github.com/zhuker/lamejs) encoder). No server involved; progress shows on the button.
+- **Download button under the player** — on any KamTape watch page, a green **Download ▾** button appears below the video. Its dropdown lists every format: MP4 (source quality), FLV (original file) with real file sizes, and MP3 at 320 / 192 / 128 kbps with estimated sizes.
+- **MP3 ripping** — decodes the video's audio track in the browser and encodes it to MP3 at your chosen bitrate (via the bundled [lamejs](https://github.com/zhuker/lamejs) encoder). No server involved; progress shows on the button.
 - **Toolbar popup** — click the extension icon on a watch page to see the video title and grab any of the three formats.
 - Files are named after the video title automatically.
 

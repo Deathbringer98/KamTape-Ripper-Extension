@@ -1,60 +1,91 @@
 #ktr-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  position: relative;
+  display: inline-block;
   margin: 8px 0;
-  padding: 8px 10px;
-  background: #33383d;
-  border-radius: 6px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#ktr-bar .ktr-label {
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  margin-right: 4px;
-}
-
-#ktr-bar .ktr-label::before {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 6px;
-  background: #6abf40;
-  border-radius: 2px;
-  vertical-align: baseline;
-}
-
-#ktr-bar .ktr-btn {
-  padding: 5px 12px;
+#ktr-bar .ktr-main {
+  padding: 7px 16px;
   background: #6abf40;
   color: #fff;
   border: none;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   cursor: pointer;
+  min-width: 130px;
 }
 
-#ktr-bar .ktr-btn:hover {
+#ktr-bar .ktr-main:hover {
   background: #7fd352;
 }
 
-#ktr-bar .ktr-btn:disabled {
+#ktr-bar .ktr-main:disabled {
   background: #555;
   cursor: default;
 }
 
-#ktr-bar .ktr-btn-mp3 {
-  background: #3d8bd4;
+#ktr-bar .ktr-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 99999;
+  min-width: 220px;
+  background: #2f3439;
+  border: 1px solid #4a5157;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
-#ktr-bar .ktr-btn-mp3:hover {
-  background: #55a0e6;
+#ktr-bar .ktr-menu.open {
+  display: block;
 }
 
-#ktr-bar .ktr-btn-mp3:disabled {
-  background: #555;
+#ktr-bar .ktr-header {
+  padding: 7px 12px 4px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9aa3ab;
+  border-top: 1px solid #3d4349;
+}
+
+#ktr-bar .ktr-header:first-child {
+  border-top: none;
+}
+
+#ktr-bar .ktr-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 12px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+#ktr-bar .ktr-item:hover {
+  background: #6abf40;
+}
+
+#ktr-bar .ktr-item:hover .ktr-item-sub {
+  color: #eaf6e2;
+}
+
+#ktr-bar .ktr-item-sub {
+  font-size: 11px;
+  font-weight: normal;
+  color: #9aa3ab;
+  white-space: nowrap;
 }

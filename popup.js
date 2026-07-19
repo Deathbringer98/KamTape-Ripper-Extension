@@ -54,7 +54,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
       btnMp3.disabled = true;
       statusEl.textContent = 'Converting audio — progress shows on the page.';
       statusEl.classList.remove('error');
-      chrome.tabs.sendMessage(tab.id, { type: 'kamtape-rip-mp3' }, (res) => {
+      chrome.tabs.sendMessage(tab.id, { type: 'kamtape-rip-mp3', bitrate: 192 }, (res) => {
         btnMp3.disabled = false;
         if (!res || !res.ok) {
           statusEl.textContent = `MP3 rip failed${res && res.error ? `: ${res.error}` : ''}`;
