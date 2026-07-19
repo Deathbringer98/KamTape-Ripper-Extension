@@ -4,9 +4,9 @@ Chrome / Brave extension that downloads videos from [kamtape.com](https://www.ka
 
 ## Features
 
-- **Download button under the player** — on any KamTape watch page, a green **Download ▾** button appears below the video. Its dropdown lists every format: MP4 (source quality), FLV (original file) with real file sizes, and MP3 at 320 / 192 / 128 kbps with estimated sizes.
-- **MP3 ripping** — decodes the video's audio track in the browser and encodes it to MP3 at your chosen bitrate (via the bundled [lamejs](https://github.com/zhuker/lamejs) encoder). No server involved; progress shows on the button.
-- **Toolbar popup** — click the extension icon on a watch page to see the video title and grab any of the three formats.
+- **Download button under the player** on any KamTape watch page, a green **Download ▾** button appears below the video. Its dropdown lists every format: MP4 (source quality), FLV (original file) with real file sizes, and MP3 at 320 / 192 / 128 kbps with estimated sizes.
+- **MP3 ripping** decodes the video's audio track in the browser and encodes it to MP3 at your chosen bitrate (via the bundled [lamejs](https://github.com/zhuker/lamejs) encoder). No server involved; progress shows on the button.
+- **Toolbar popup** click the extension icon on a watch page to see the video title and grab any of the three formats.
 - Files are named after the video title automatically.
 
 ## How it works
@@ -30,7 +30,7 @@ saves the result as `<title>.mp3`.
 1. Open `chrome://extensions` (Brave: `brave://extensions`).
 2. Turn on **Developer mode** (top-right toggle).
 3. Click **Load unpacked** and select this `KamTapeRipper` folder.
-4. Visit any KamTape video page — the rip bar appears under the player.
+4. Visit any KamTape video page the rip bar appears under the player.
 
 ## Files
 
@@ -45,4 +45,4 @@ saves the result as `<title>.mp3`.
 
 ## Note
 
-Only download videos you have the right to save. Respect KamTape's Terms of Use and video owners' copyright.
+Only download videos you have the right to save. Respect KamTape's Terms of Use.
