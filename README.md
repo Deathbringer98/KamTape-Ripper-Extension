@@ -37,7 +37,7 @@ saves the result as `<title>.mp3`.
 | File | Purpose |
 |------|---------|
 | `manifest.json` | Manifest V3 config |
-| `background.js` | Service worker — performs downloads |
+| `background.js` | Service worker performs downloads |
 | `content.js` / `content.css` | Injects the rip bar on watch pages; MP3 conversion |
 | `lame.min.js` | Bundled lamejs MP3 encoder |
 | `popup.html` / `popup.css` / `popup.js` | Toolbar popup UI |
