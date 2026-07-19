@@ -1,0 +1,60 @@
+#ktr-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 8px 10px;
+  background: #33383d;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ktr-bar .ktr-label {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+#ktr-bar .ktr-label::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  background: #6abf40;
+  border-radius: 2px;
+  vertical-align: baseline;
+}
+
+#ktr-bar .ktr-btn {
+  padding: 5px 12px;
+  background: #6abf40;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#ktr-bar .ktr-btn:hover {
+  background: #7fd352;
+}
+
+#ktr-bar .ktr-btn:disabled {
+  background: #555;
+  cursor: default;
+}
+
+#ktr-bar .ktr-btn-mp3 {
+  background: #3d8bd4;
+}
+
+#ktr-bar .ktr-btn-mp3:hover {
+  background: #55a0e6;
+}
+
+#ktr-bar .ktr-btn-mp3:disabled {
+  background: #555;
+}

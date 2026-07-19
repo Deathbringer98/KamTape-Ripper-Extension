@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="24" height="24" />
+    <span>Kam<em>Tape</em> Ripper</span>
+  </header>
+
+  <div id="state-idle" class="state hidden">
+    <p>Open a video on <strong>kamtape.com</strong>, then click this icon to rip it.</p>
+  </div>
+
+  <div id="state-loading" class="state">
+    <p>Checking this page…</p>
+  </div>
+
+  <div id="state-video" class="state hidden">
+    <p id="video-title" class="title"></p>
+    <button id="dl-mp4" class="dl">Download MP4</button>
+    <button id="dl-flv" class="dl secondary">Download FLV (original)</button>
+    <button id="dl-mp3" class="dl mp3">Rip MP3 (audio only)</button>
+    <p id="status" class="status"></p>
+  </div>
+</body>
+<script src="popup.js"></script>
+</html>
