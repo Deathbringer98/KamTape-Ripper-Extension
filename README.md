@@ -10,6 +10,7 @@ Chrome / Brave extension that downloads videos from [kamtape.com](https://www.ka
 - Files are named after the video title automatically.
 
 ## How it works
+<img width="1038" height="879" alt="image" src="https://github.com/user-attachments/assets/0864d931-6b8c-450d-b368-9ab9120ce8a9" />
 
 KamTape serves videos from a simple endpoint:
 
@@ -46,3 +47,6 @@ saves the result as `<title>.mp3`.
 ## Note
 
 Only download videos you have the right to save. Respect KamTape's Terms of Use.
+
+
+
